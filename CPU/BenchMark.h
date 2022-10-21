@@ -91,7 +91,8 @@ public:
     }
 
     void HHMultiBench(uint32_t MEMORY, double alpha){
-        MultiAbstract<TUPLES>* sketch = new OurSoft<TUPLES>(MEMORY);
+#define HHMultiSketch OurSoft
+        MultiAbstract<TUPLES>* sketch = new HHMultiSketch<TUPLES>(MEMORY);
 
         for(uint32_t i = 0;i < length;++i){
             sketch->Insert(dataset[i]);

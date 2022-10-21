@@ -34,3 +34,8 @@
 # Mac
 *.DS_Store
 .idea
+
+# Cmake build/ at CPU
+build/
+data/
+.vscode

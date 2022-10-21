@@ -17,7 +17,8 @@ Requirements
 How to run
 -------
 ```bash
-$ cmake .
+$ mkdir build && cd build/
+$ cmake ..
 $ make
 $ ./CPU your-dataset
 ```

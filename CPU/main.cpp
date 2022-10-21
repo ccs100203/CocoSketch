@@ -5,6 +5,7 @@ int main(int argc, char *argv[]) {
         std::cout << argv[i] << std::endl;
         BenchMark dataset(argv[i], "Dataset");
         dataset.HHMultiBench(500000, 0.0001);
+        // dataset.HHSingleBench(500000, 0.0001);
     }
     return 0;
 }
